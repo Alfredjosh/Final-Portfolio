@@ -1,0 +1,26 @@
+body{background-image:url("ahs.jpg");
+background-repeat:no-repeat;
+background-size:100%;
+}
+
+a:link {
+color: orange;
+}
+
+p{font-family:BrushScriptMT; 
+color:orange; 
+text-align:center;
+font-size:25px;
+font-weight: bold;
+}
+
+
+h1{font-family:TimesNewRoman; 
+color:blue; 
+text-align:center;
+}
+
+img{height:200px;
+width:200px;
+float:right;
+}

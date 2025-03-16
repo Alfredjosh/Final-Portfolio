@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head> <title>2nd QT Portfolio</title>
+<link rel="stylesheet" href="Reflection.css" type="text/css">
+</head>
+<body>
+<h1> What did my reflection show? </h1>
+<p> Second Quarter went way better than I thought it would be, in a way it was 
+easier for me to understand the lessons.
+I don't really know the reason, however I think it's because of my first quarter 
+knowledge, that made this quarter much much easier.<br>
+Now I did have a confusing time with the span and div tags but in the end 
+I was able to pull through. I think the most difficult lesson was either 4 or 5.<br>
+And finally though we didn't have much time for lessons when we did, Miss Uminga 
+never fails to deliver. I would like to thank her once again for her efforts in
+teaching Grade-9 Fidelity. </p>
+
+<a href="2nd quarter portfolio.html"> Home link </a>
+
+<img src="nice.jpg" alt="nice">
+
+</body>
+</html>
