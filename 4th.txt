@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>4th QT Portfolio</title>
+  <style>
+  body {
+    font-family: Arial, sans-serif; /* Clean, modern font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('mama.jpeg'); /* Background image */
+    background-size: contain; /* Ensures the entire image is visible */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    background-position: center; /* Centers the image */
+    background-color: #3a3a3a; /* Subtle dark gray fallback color */
+    color: white; /* Text color for readability */
+  }
+  table {
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.8); /* Light semi-transparent table background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Keeps corners rounded */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  }
+  td {
+    padding: 20px 30px; /* Spacing for better readability */
+    font-size: 18px; /* Text size */
+    text-align: center; /* Centers the text */
+    transition: background 0.3s, transform 0.3s; /* Smooth hover effect */
+  }
+  a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Dark text color for good contrast */
+    font-weight: bold; /* Emphasizes links */
+  }
+  td:hover {
+    background: rgba(200, 200, 200, 0.9); /* Light gray hover effect */
+    transform: scale(1.05); /* Slight zoom-in effect */
+  }
+  td:first-child {
+    border-top-left-radius: 10px;
+  }
+  td:last-child {
+    border-top-right-radius: 10px;
+  }
+    .back-button {
+      position: fixed; /* Fixes button's position */
+      bottom: 10px; /* Distance from bottom edge */
+      left: 10px; /* Distance from left edge */
+      padding: 10px 20px; /* Button size */
+      font-size: 16px; /* Text size */
+      font-family: Arial, sans-serif; /* Consistent font */
+      color: white; /* Button text color */
+      background: #333; /* Button background color */
+      border: none; /* Removes border */
+      border-radius: 5px; /* Rounded corners */
+      cursor: pointer; /* Pointer cursor on hover */
+      transition: background 0.3s, transform 0.3s; /* Smooth hover effect */
+      text-decoration: none; /* Removes underline from link-like button */
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    }
+    .back-button:hover {
+      background: #555; /* Slightly lighter background on hover */
+      transform: scale(1.1); /* Slight zoom-in effect */
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr> 
+      <td><a href="Allson.html">Lessons in the 4th Quarter</a></td>
+      <td><a href="How.html">How Well Did I Do?</a></td>
+      <td><a href="Acts.html">Activities in the 4th Quarter</a></td>
+    </tr>
+  </table> 
+
+  <a href="4th quarter portfolio.html" class="back-button">Back to Entrance Gate</a> <!-- Back button -->
+</body>
+</html>
