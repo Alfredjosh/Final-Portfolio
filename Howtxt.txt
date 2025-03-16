@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotional Reflection</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        background: url('Rain.jpeg') no-repeat center center fixed;
+        background-size: cover;
+        color: #023047;
+        text-align: center;
+        padding: 25px;
+    }
+        }
+        h1 {
+            font-size: 2.5em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+	    color: white;
+        }
+        select {
+            padding: 12px;
+            font-size: 1em;
+            border: 2px solid #ffb703;
+            border-radius: 5px;
+            transition: box-shadow 0.3s ease;
+        }
+        select:hover {
+            box-shadow: 0 0 10px #fb8500;
+        }
+        input[type="button"], a.button {
+            padding: 14px 22px;
+            font-size: 1em;
+            background-color: #ffb703;
+            color: #023047;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        input[type="button"]:hover, a.button:hover {
+            background-color: #fb8500;
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    <script type="text/javascript">
+        // Display alert on page load
+        window.onload = function() {
+            alert("I used Grammarly Premium for my reflection po hehe");
+        };
+
+        let longVersion = true; // Toggle to switch between short and long messages
+
+        function bookcheck() {
+            const book = document.formbook.cmbbook.value;
+            let message = "";
+
+            if (longVersion) {
+                switch (book) {
+                    case "1":
+                        message = "Reflecting on my journey with JavaScript, I can’t help but feel a strong sense of pride. Learning and applying JavaScript has been a rollercoaster, full of trial and error, but the satisfaction of seeing my code finally work was unparalleled. At times, it felt like trying to decode an ancient language, with errors popping up unexpectedly, but those moments of clarity when everything fell into place were worth every ounce of effort. The thrill of building something functional from mere lines of code truly underscored just how rewarding programming can be. It taught me patience, problem-solving, and most importantly, to celebrate even the small victories.";
+                        break;
+                    case "2":
+                        message = "The memory of that championship win during the Battle of the Bands feels as vivid as if it happened yesterday. Standing on that stage, with lights bearing down and the adrenaline coursing through my veins, is a sensation I’ll never forget. As our music reverberated through the venue, the energy from the crowd was palpable—cheering, clapping, and even singing along. Winning wasn’t just about the trophy; it was about the connection we built with our audience, the pride we felt as a team, and the validation of all our hard work. The thought of returning next year and potentially defending our title fills me with both excitement and determination. It’s a reminder that passion, teamwork, and a bit of courage can lead to extraordinary moments.";
+                        break;
+                    case "3":
+                        message = "Participating in the one-act play and the Battle of the Bands wasn’t just about performances; it was a journey of personal growth. Through these activities, I found myself learning the intricacies of collaboration—how to communicate effectively, listen to others’ ideas, and adapt to different situations. The one-act play challenged my creativity, pushed me to embody a character, and taught me the power of storytelling, while the Battle of the Bands honed my ability to synchronise with others, trust my bandmates, and perform under pressure. Both experiences gave me a deeper understanding of what it means to contribute to a team, and I feel they’ve shaped me into a more well-rounded, confident individual.";
+                        break;
+                    case "4":
+                        message = "Grade 9 feels like a beautiful tapestry woven with countless cherished memories, and I can’t express how much it all means to me. Ms. U’s unwavering kindness and her ability to create a relaxed yet engaging classroom environment made a lasting impact. She allowed us the space to grow, make mistakes, and truly enjoy learning—qualities that made her a remarkable mentor. My classmates, with their unique quirks and shared laughter, turned what could’ve been just another year into something extraordinary. Whether it was inside jokes, late-night projects, or shared victories, the bond we formed was truly special. My bandmates became like a second family, offering support and encouragement both on and off the stage. And my actual family, of course, stood by me through thick and thin, cheering me on every step of the way. Looking back, it’s clear that Grade 9 wasn’t just a school year—it was a chapter in my life that I’ll hold close to my heart forever.";
+                        break;
+                    default:
+                        message = "How did you get here??";
+                }
+            } else {
+                switch (book) {
+                    case "1":
+                        message = "Well, I'm quite happy with what I accomplished. JavaScript was fun when you're correct.";
+                        break;
+                    case "2":
+                        message = "I will never forget the Battle of the Bands first championship taste. Hoping to go back to back. And the fact that the crowd was so hyped made me happy.";
+                        break;
+                    case "3":
+                        message = "As for me, the One Act Play and Battle of the Bands improved me as a team worker and player.";
+                        break;
+                    case "4":
+                        message = "I don't know what to say, I'm so grateful for Ms. U's heavy leniency, kindness, and fun nature. I'm so thankful for my class, and the fact that we all got along so well. I'm thankful for my band, my family, everything hehe. Grade 9 is the most unforgettable year in my opinion. And it's my favourite.";
+                        break;
+                    default:
+                        message = "How did you get here??";
+                }
+            }
+
+            displayMessage(message);
+        }
+
+        function toggleVersion() {
+            longVersion = !longVersion; // Switch between short and long reflections
+            const versionText = longVersion ? "Switch to Short Reflections" : "Switch to Long Reflections";
+            document.getElementById("toggleButton").value = versionText;
+        }
+
+        function displayMessage(message) {
+            const result = document.createElement('div');
+            result.style.padding = "20px";
+            result.style.marginTop = "20px";
+            result.style.background = "#023047";
+            result.style.color = "#fff";
+            result.style.borderRadius = "10px";
+            result.style.fontSize = "1.2em";
+            result.style.animation = "fadeIn 1s ease";
+            result.innerText = message;
+            document.body.appendChild(result);
+        }
+    </script>
+</head>
+<body>
+    <h1 color="white">Reflections of the Final Quarter</h1>
+    <p>Select a question below to know how I felt this quarter:</p>
+    <form name="formbook">
+        <select name="cmbbook">
+            <option value="1">How I did in ICT?</option>
+            <option value="2">My performances/Activities</option>
+            <option value="3">Self Reflection</option>
+            <option value="4">Goodbyes and Gratitudes</option>
+        </select>
+        <input type="button" name="combo" value="SUBMIT" onClick="bookcheck()">
+    </form>
+    <input type="button" id="toggleButton" value="Switch to Short Reflections" onclick="toggleVersion()">
+    <br>
+    <!-- Link to 4th.html -->
+    <a href="4th.html" class="button">Return to Main Page</a>
+</body>
+</html>

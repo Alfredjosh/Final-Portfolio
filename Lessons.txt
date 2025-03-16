@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head> <title>2nd QT Portfolio</title>
+<link rel="stylesheet" href="Lessons.css" type="text/css">
+</head>
+<body>
+<h1> Second Quarter Lessons </h1>
+<p> <a href="2nd quarter portfolio.html"> Home link </a> </p>
+<video controls autoplay> <source src="lessons2qt.mp4" type="video/mp4"> </video>
+</body>
+</html>
